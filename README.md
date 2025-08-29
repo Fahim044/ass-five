@@ -1,6 +1,7 @@
 1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 Answer :
+
 getElementById এর মাধ্যমে HTML document এ লিখা কোনো element কে id এর মাধ্যমে 
 access করা যায়।আমরা জানি, একটা id কেবল একটি specific element এর ই হবে।তাই
 এটি হচ্ছে getElementById.
@@ -25,6 +26,7 @@ querySelector এর মাধ্যমে কোনো parentNode এর ভে
 সবগুলোকেই দেখাবে।
 
 2.How do you create and insert a new element into the DOM?
+
 Answer:
 
 To create a new element into the DOM:
@@ -36,6 +38,7 @@ document.getElementById("container").appendChild(div);
 Thus,we can create and insert a new element into the DOM.
 
 3.What is Event Bubbling and how does it work?
+
 Answer: 
 
 Event Bubbling হচ্ছে DOM event flow এর একটা mechanism,যেখানে 
@@ -46,6 +49,7 @@ parentNode এও যদি event দেওয়া থাকে,তাহলে �
 
 
 4.What is Event Delegation in JavaScript? Why is it useful?
+
 Answer:
 
 Event Delegation হচ্ছে javascript এ event handle করার একটা টেকনিক,
@@ -56,7 +60,9 @@ Event Delegation হচ্ছে javascript এ event handle করার এক
 improved হয়।Dynamically event handle করা যায়।
 
 5.What is the difference between preventDefault() and stopPropagation() methods?
+
 Answer: 
+
 preventDefault() এর বিষয় টি হলো এই যে,একটা <form> tag এর ভেতরে যদি কোনো button থাকে,তবে সেটি by default একটা submit অবস্থায় থাকে,যার কারনে সেই বাটনে ক্লিক করলে পুরো পেজ টাই রিলোড নেয়।
 এখন,যদি আমি চাই যে,এই বাটন টি সাবমিট অবস্থায় ই থাকবে,কিন্তু ক্লিক করলে রিলোড নিবে না,সেক্ষত্রে আমরা এই preventDefault() ব্যবহার করি।
 
