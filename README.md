@@ -54,4 +54,9 @@ improved হয়।Dynamically event handle করা যায়।
 
 5.What is the difference between preventDefault() and stopPropagation() methods?
 Answer: 
+preventDefault() এর বিষয় টি হলো এই যে,একটা <form> tag এর ভেতরে যদি কোনো button থাকে,তবে সেটি by default একটা submit অবস্থায় থাকে,যার কারনে সেই বাটনে ক্লিক করলে পুরো পেজ টাই রিলোড নেয়।
+এখন,যদি আমি চাই যে,এই বাটন টি সাবমিট অবস্থায় ই থাকবে,কিন্তু ক্লিক করলে রিলোড নিবে না,সেক্ষত্রে আমরা এই preventDefault() ব্যবহার করি।
 
+আর অপরদিকে,  stopPropagation() ব্যবহার করা হয় event bubbling এর ঘটনায় একটা childNode এ ক্লিক করলে এই childNode এর event এবং তার উপরের parentNode এর event উভয়ের ক্লিক এর প্রভাব যেন একসাথে না পড়ে,শুধু childNode,যেটাতে ক্লিক করা হয়েছে,বা triggered হয়েছে,শুধু সেটারই function করবে,parentNode এর টা করবে না।
+
+এটি ই হচ্ছে preventDefault() and stopPropagation() এর মধ্যে difference.
