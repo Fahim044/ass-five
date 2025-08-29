@@ -26,6 +26,7 @@ querySelector এর মাধ্যমে কোনো parentNode এর ভে
 
 2.How do you create and insert a new element into the DOM?
 Answer:
+
 To create a new element into the DOM:
 const div=document.createElement("div");
 To insert this into the DOM:
@@ -36,6 +37,7 @@ Thus,we can create and insert a new element into the DOM.
 
 3.What is Event Bubbling and how does it work?
 Answer: 
+
 Event Bubbling হচ্ছে DOM event flow এর একটা mechanism,যেখানে 
 It propagates upwards through it's parent elements in the hierarchy.
 এখানে,একটি childNode event এ click করলে বা triggered হলে সেই অংশে trigger apply তো হবেই,বরং তার 
@@ -45,6 +47,7 @@ parentNode এও যদি event দেওয়া থাকে,তাহলে �
 
 4.What is Event Delegation in JavaScript? Why is it useful?
 Answer:
+
 Event Delegation হচ্ছে javascript এ event handle করার একটা টেকনিক,
 যেখানে একাধিক child element এ individual event listener add করার বদলে
 একটা single event listener,common parent element এ attach করে দেওয়া যায়।
