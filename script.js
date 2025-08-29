@@ -37,7 +37,7 @@ for(const callBtn of callBtns)
     callBtn.addEventListener("click",function()
 {
     let parent=callBtn.parentNode.parentNode;
-    console.log(parent);
+    // console.log(parent);
     
     let resultC=parent.querySelector(".category");
     // console.log(resultC);
@@ -58,7 +58,7 @@ else{
     coin=coin-20;
     document.getElementById("coin-no").innerText=coin;
 }
-// console.log(coin);
+
 
 
 
@@ -81,3 +81,22 @@ else{
 document.getElementById("clear-btn").addEventListener("click",function(){
     document.getElementById("history-container").innerText="";
 })
+
+// copy button feature:
+let copyNo=getInnerText("copy-no");
+// console.log(copyNo);
+const copyBtns=document.getElementsByClassName("copy-btn");
+for(const copyBtn of copyBtns)
+{
+    copyBtn.addEventListener("click",function()
+{
+    let parent=copyBtn.parentNode.parentNode;
+    let resultN=parent.querySelector(".number");
+    alert(`Number Copied: ${resultN.innerText}`);
+    // adding copy number:
+    copyNo++;
+    document.getElementById("copy-no").innerText=copyNo;
+
+    
+})
+}
