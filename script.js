@@ -41,21 +41,26 @@ for(const callBtn of callBtns)
     
     let resultC=parent.querySelector(".category");
     // console.log(resultC);
-    console.log(resultC.innerText);
+    // console.log(resultC.innerText);
     let resultN=parent.querySelector(".number");
     // console.log(resultN);
-    console.log(resultN.innerText);
+    // console.log(resultN.innerText);
+
+   if(coin<20)
+{
+    alert("You don't have enough coin!You need at least 20 coins to call");
+    return;
+}
+else{
     alert(`calling ${resultC.innerText} ${resultN.innerText}...`);
 
     // cutting coins:
     coin=coin-20;
     document.getElementById("coin-no").innerText=coin;
-// console.log(coin);
-if(coin<20)
-{
-    alert("You need at least 20 coins to call");
-    return;
 }
+// console.log(coin);
+
+
 
     const historyContainer=document.getElementById("history-container");
     const div=document.createElement("div");
@@ -73,3 +78,6 @@ if(coin<20)
 })
 }
 
+document.getElementById("clear-btn").addEventListener("click",function(){
+    document.getElementById("history-container").innerText="";
+})
