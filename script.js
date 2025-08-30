@@ -97,6 +97,8 @@ for(const copyBtn of copyBtns)
     copyNo++;
     document.getElementById("copy-no").innerText=copyNo;
 
+    // copying number feature:
+    navigator.clipboard.writeText(resultN.innerText);
     
 })
 }
